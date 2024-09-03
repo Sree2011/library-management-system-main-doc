@@ -12,6 +12,7 @@ This module provides an interactive interface to the user
 
     
 ## Functions
+
 |Function name | Description |
 |:--:|:--:|
 |`main()`|A user interface|
