@@ -2,6 +2,35 @@
 
 This module provides an interactive interface to the user
 
+Modules:
+
+    book: 
+        functionalities to manage a library system, including book management, tracking the issue and return of books, and updating book statuses
+
+> import other dependencies based on the language chosen
+    
+Functions:
+
+    main():
+      A user interface
+      
+    add_book(): 
+        Adds a new book to the library.
+
+    find_book(name): 
+        Finds a book by its title.
+
+    list_books(): 
+        Retrieves a list of all books in the library.
+
+    issue_book(name): 
+        Issues a book and updates its status to "Yes".
+        
+    return_book(name): 
+        Returns a book and updates its status to "No".
+
+
+
 ## Main function
   Display welcome information to the user and
   do the operation based on the user's preference
