@@ -3,18 +3,17 @@
 This module provides an interactive interface to the user
 
 ## Main function
+  Display welcome information to the user and
+  do the operation based on the user's preference
 
+  **Parameters:**\
+      None
+      
+  **Returns:**\
+      None
+        
 ```pseudocode
 FUNCTION main()
-  '''
-    Display welcome information to the user and
-    do the operation based on the user's preference
-
-    Parameters:
-        None
-    Returns:
-        None
-  '''
     DISPLAY "Hi! Welcome to our Library Book Management System!"
     DISPLAY "What should we call you?"
     DECLARE STRING name_user
