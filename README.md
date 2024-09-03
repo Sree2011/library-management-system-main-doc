@@ -6,10 +6,19 @@ The Library Management System is a console-based application designed to manage 
 ## Features
 - **Book Management:** Add, search for, issue, and return books.
 
+
 ## Implementation
 
-This project is implemented in 3 languages: C programming, Java and Python
+This project is implemented in 3 languages: 
+- C programming
+- Java
+- Python
 
+## Pseudocode
+
+<!--Links to pseudocodes here-->
+
+## Links to implementations and documentation
 
 The link to the python implementation and docs: \
 [Python](https://sree2011.github.io/library-management-system-python/)
