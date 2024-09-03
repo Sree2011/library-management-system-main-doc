@@ -20,7 +20,7 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-remote_theme: "startbootstrap/startbootstrap-creative-jekyll"
+remote_theme: "StartBootstrap/startbootstrap-clean-blog-jekyll"
 
 #theme: minimal-mistakes-jekyll
 markdown: kramdown
