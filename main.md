@@ -12,25 +12,14 @@ This module provides an interactive interface to the user
 
     
 ## Functions
-
-    main():
-      A user interface
-      
-    add_book(): 
-        Adds a new book to the library.
-
-    find_book(name): 
-        Finds a book by its title.
-
-    list_books(): 
-        Retrieves a list of all books in the library.
-
-    issue_book(name): 
-        Issues a book and updates its status to "Yes".
-        
-    return_book(name): 
-        Returns a book and updates its status to "No".
-
+|Function name | Description |
+|:--:|:--:|
+|`main()`|A user interface|
+|`add_book()`|Adds a new book to the library|
+|`find_book(name)`|Finds a book by its title|
+|`list_books()`|Gets the list of all books in the library|
+|`issue_book(name)`|Issues a book and updates its status to "Yes"|
+|`return_book(name)`|Returns a book and updates its status to "No"|
 
 
 ### Main function
