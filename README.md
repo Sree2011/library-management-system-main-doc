@@ -14,9 +14,10 @@ This project is implemented in 3 languages:
 - Java
 - Python
 
-## Pseudocode
+## Algorithms
 
-- USER INTERFACE -- [UI](./main.md)
+- MAIN MODULE -- [MAIN](./main.md)
+- BOOK MODULE -- [BOOK](./book.md)
 
 ## Links to implementations and documentation
 
