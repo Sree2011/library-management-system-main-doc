@@ -20,7 +20,7 @@ This module initialises a book class and calls the utility functions from bookut
 
 |Function name | Description |
 |:--:|:--:|
-|`__init__`|Constructor of Book class|
+|`Book(name,author,volume,issued)`|Constructor of Book class|
 |`add_book()`|Adds a new book to the library|
 |`find_book(name)`|Finds a book by its title|
 |`get_all_books()`|Gets the list of all books in the library|
