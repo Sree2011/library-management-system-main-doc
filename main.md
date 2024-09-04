@@ -22,81 +22,49 @@ This module provides an interactive interface to the user
 |`issue_book(name)`|Issues a book and updates its status to "Yes"|
 |`return_book(name)`|Returns a book and updates its status to "No"|
 
+Here's the algorithm for your library management system:
 
-### Main function
-  Display welcome information to the user and
-  do the operation based on the user's preference
+## Algorithm
 
-  **Parameters:**\
-      None
-      
-  **Returns:**\
-      None
-        
-```pseudocode
-FUNCTION main()
-    # Welcome the user and ask name
-    DISPLAY "Hi! Welcome to our Library Book Management System!"
-    DISPLAY "What should we call you?"
-    DECLARE STRING name_user
-    INPUT name_user
-    DISPLAY "Hello, " + name_user
-    DECLARE INTEGER option
+### Main Function
+  ```pseudocode
+    - Display a welcome message.
+    - Prompt the user for their name and greet them.
+    - Display options for adding a book, listing all books, issuing a book, or returning a book.
+    - Based on the user's choice, call the appropriate function (`add_book`, `list_books`, `issue_book`, `return_book`).
+  ```
 
-    # Display options to the user and take input
-    DISPLAY "If you want to add a book, press 1"
-    DISPLAY "If you want to see all books, press 2"
-    DISPLAY "If you want to get a book issued, press 3"
-    DISPLAY "If you want to return a book, press 4"
-    INPUT option
+### Add Book Function
+  ```algorithm
+    - Prompt the user to enter the details of the book (name, author, volume).
+    - Set the issued status to "No".
+    - Create a `Book` object with the provided details.
+    - Call the `add_book` method of the `Book` object to add the book to the library.
+  ```
 
-    # Perform operation based on the input
-    IF option is equal to 1
-      CALL add_book()
-    ELSE IF option is equal to 2
-      CALL list_books()
-    ELSE IF option is equal to 3
-      CALL issue_book()
-    ELSE IF option is equal to 4
-      CALL return_book()
-    ENDIF
-  END FUNCTION
-```
+3. **List Books Function**
+    - Create a `Book` object with sample data.
+    - Define column headers as ["Name", "Author", "Volume", "Issued"].
+    - Call the `get_all_books` method of the `Book` object to retrieve all books.
+    - Convert the result to a pandas DataFrame with the specified columns.
+    - Set the DataFrame index to start from 1.
+    - Print the DataFrame.
+    - Return the DataFrame.
 
-### Add Book function
+4. **Issue Book Function**
+    - Call the `list_books` function to get the list of all books.
+    - Prompt the user to enter the name of the book to be issued.
+    - Perform a case-insensitive comparison to find the book in the DataFrame.
+    - If the book is not found, print "No books found with that name."
+    - If the book is found, print the details of the book.
+    - Create a `Book` object using the details of the found book.
+    - Call the `issue_book` method of the `Book` object to update the issued status to "Yes".
 
-Take the details of the book from the user as input
-and add them to the library file.
-
-  **Parameters:**\
-      None
-      
-  **Returns:**\
-      None
-
-```pseudocode
-FUNCTION add_book()
-    # Get the details from the user
-    DISPLAY "Enter the details of the book you want to add:"
-    DECLARE STRING name_book
-    DECLARE STRING author_book
-    DECLARE STRING volume_book
-    DECLARE STRING issued
-    
-    INPUT name_book
-    name_book = CAPITALIZE(name_book)
-    
-    INPUT author_book
-    author_book = CAPITALIZE(author_book)
-    
-    INPUT volume_book
-    
-    issued = "No"
-    
-    # Create an object of Book class from book module to activate functions
-    DECLARE OBJECT new_book
-    new_book = CREATE Book(name_book, author_book, volume_book, issued)
-    
-    # Call the add book function
-    CALL new_book.add_book()
-```
+5. **Return Book Function**
+    - Call the `list_books` function to get the list of all books.
+    - Prompt the user to enter the name of the book to be returned.
+    - Perform a case-insensitive comparison to find the book in the DataFrame.
+    - If the book is not found, print "No books found with that name."
+    - If the book is found, print the details of the book.
+    - Create a `Book` object using the details of the found book.
+    - Call the `return_book` method of the `Book` object to update the issued status to "No".
