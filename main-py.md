@@ -12,6 +12,8 @@
     - **issue_book(name):** Issues a book and updates its status to "Yes".\
     - **return_book(name):** Returns a book and updates its status to "No".
 
+### Pseudocode
+
 ```pseudocode
 FUNCTION main
     PRINT welcome message
