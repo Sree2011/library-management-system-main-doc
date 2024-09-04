@@ -22,48 +22,46 @@ This module provides an interactive interface to the user
 |`issue_book(name)`|Issues a book and updates its status to "Yes"|
 |`return_book(name)`|Returns a book and updates its status to "No"|
 
-Here's the algorithm for your library management system:
 
 ## Algorithm
 
 ### Main Function
-  ```pseudocode
+
     - Display a welcome message.
     - Prompt the user for their name and greet them.
     - Display options for adding a book, listing all books, issuing a book, or returning a book.
     - Based on the user's choice, call the appropriate function (`add_book`, `list_books`, `issue_book`, `return_book`).
-  ```
 
 ### Add Book Function
-  ```algorithm
+
     - Prompt the user to enter the details of the book (name, author, volume).
     - Set the issued status to "No".
     - Create a `Book` object with the provided details.
     - Call the `add_book` method of the `Book` object to add the book to the library.
-  ```
 
-3. **List Books Function**
+### List Books Function
+
     - Create a `Book` object with sample data.
     - Define column headers as ["Name", "Author", "Volume", "Issued"].
     - Call the `get_all_books` method of the `Book` object to retrieve all books.
-    - Convert the result to a pandas DataFrame with the specified columns.
-    - Set the DataFrame index to start from 1.
-    - Print the DataFrame.
-    - Return the DataFrame.
+    - Convert the result to a readable format.
+    - Print and return the result.
 
-4. **Issue Book Function**
-    - Call the `list_books` function to get the list of all books.
+### Issue Book Function
+
+    - Call the `list_books` function to get the list of all books and store into df.
     - Prompt the user to enter the name of the book to be issued.
-    - Perform a case-insensitive comparison to find the book in the DataFrame.
+    - Perform a case-insensitive comparison to find the book in df.
     - If the book is not found, print "No books found with that name."
     - If the book is found, print the details of the book.
     - Create a `Book` object using the details of the found book.
     - Call the `issue_book` method of the `Book` object to update the issued status to "Yes".
 
-5. **Return Book Function**
-    - Call the `list_books` function to get the list of all books.
+### Return Book Function
+
+    - Call the `list_books` function to get the list of all books and store into df.
     - Prompt the user to enter the name of the book to be returned.
-    - Perform a case-insensitive comparison to find the book in the DataFrame.
+    - Perform a case-insensitive comparison to find the book in df.
     - If the book is not found, print "No books found with that name."
     - If the book is found, print the details of the book.
     - Create a `Book` object using the details of the found book.
