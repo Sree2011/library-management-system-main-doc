@@ -7,11 +7,9 @@
 
 **Functions:**\
     - **append_dict_to_csv(file_path,my_dict):** Appends book data into the library csv.\
-    - **find_book(name):** Finds a book by its title.\
-    - **list_books():** Retrieves a list of all books in the library.\
-    - **issue_book(name):** Issues a book and updates its status to "Yes".\
-    - **return_book(name):** Returns a book and updates its status to "No".
-
+    - **find_book(file_path,name):** Finds a book by its title.\
+    - **get_books(file_path):** Retrieves a list of all books in the library.\
+    - **update_book_status(file_path,name,status):** Issues a book and updates its status to "Yes".\
 
 
 
