@@ -67,5 +67,3 @@ FUNCTION return_book
         CREATE a Book object using data from the first row of the result
         CALL return_book method of the Book object with user input
 ```
-
-Refer to the python function documentation here: [Python Docs](https://sree2011.github.io/library-management-system-python/)
