@@ -18,6 +18,7 @@ This project is implemented in 3 languages:
 
 - MAIN MODULE -- [MAIN](./main.md)
 - BOOK MODULE -- [BOOK](./book.md)
+- BOOKUTILS MODULE -- [BOOKUTILS](./bookutils.md)
 
 ## Links to implementations and documentation
 
