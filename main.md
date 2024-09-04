@@ -26,8 +26,6 @@ This module provides an interactive interface to the user
 
 ## Algorithm
 
-Sure! Here's the content modified into an input-process-output format for each function:
-
 ### Main Function
 
 **Input**:

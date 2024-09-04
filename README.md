@@ -30,4 +30,3 @@ The link to the java implementation and docs: \
 
 The link to the C programming implementation and docs: \
 [C programming](https://sree2011.github.io/library-management-system-c/)
-
