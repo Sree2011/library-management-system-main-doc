@@ -72,21 +72,19 @@ This module provides an interactive interface to the user
 
 ### Python
 
+**Modules:**
+    - **book:** Manages library system functionalities including book management, tracking issues and returns, and updating book statuses.
+    - **pandas:** Python library for data visualization.
+    - **numpy:** Python library for data analysis.
+
+**Functions:**
+    - **add_book():** Adds a new book to the library.
+    - **find_book(name):** Finds a book by its title.
+    - **list_books():** Retrieves a list of all books in the library.
+    - **issue_book(name):** Issues a book and updates its status to "Yes".
+    - **return_book(name):** Returns a book and updates its status to "No".
+
 ```pseudocode
-MAIN MODULE
-
-Modules:
-    - book: Manages library system functionalities including book management, tracking issues and returns, and updating book statuses.
-    - pandas: Python library for data visualization.
-    - numpy: Python library for data analysis.
-
-Functions:
-    - add_book(): Adds a new book to the library.
-    - find_book(name): Finds a book by its title.
-    - list_books(): Retrieves a list of all books in the library.
-    - issue_book(name): Issues a book and updates its status to "Yes".
-    - return_book(name): Returns a book and updates its status to "No".
-
 FUNCTION main
     PRINT welcome message
     PROMPT user for their name and greet them
