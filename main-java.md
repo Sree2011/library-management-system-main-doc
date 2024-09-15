@@ -13,9 +13,7 @@
 
 ## Pseudocode
 
-```pseudo
-
-Import Scanner
+```pseudocode
 
 CLASS Main
     DECLARE STATIC OBJECT Scanner sc
@@ -90,12 +88,17 @@ CLASS Main
         DISPLAY "Issued: " + issued
 
          // Create a Book object and call the add_book method
-        CREATE STATIC OBJECT Book(book_name,author_name,volume,issued)
+        CREATE STATIC OBJECT book Book(book_name,author_name,volume,issued)
         Call "add_book" method on the "book" object, passing "filePath" as an argument.
 
     END METHOD
 
+    METHOD list_books()
+        CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
+        Call "get_all_books" method on the "book" object, passing "filePath" as an argument.
+    END METHOD
 
+    
 
 
 ENDCLASS
