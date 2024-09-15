@@ -45,7 +45,7 @@
 
 ## Pseudocode
 
-```pseudocode
+```
 
 Import Scanner
 
@@ -124,7 +124,7 @@ CLASS Main
          // Create a Book object and call the add_book method
         CREATE STATIC OBJECT Book(book_name,author_name,volume,issued)
         Call "add_book" method on the "book" object, passing "filePath" as an argument.
-        
+
     END METHOD
 
 
