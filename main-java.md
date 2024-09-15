@@ -10,42 +10,10 @@
     - **issue_book(name):** Issues a book and updates its status to "Yes".\
     - **return_book(name):** Returns a book and updates its status to "No".
 
-## Algorithm
-
-1. **Main Function**
-    - Initialize Scanner object for user input.
-    - Define file path for storing book data.
-    - Display welcome message and ask for user's name.
-    - Display options to the user:
-        - 1. Add a book
-        - 2. List all books
-        - 3. Issue a book
-        - 4. Return a book
-    - Perform operation based on user input using a switch-case structure.
-
-2. **add_book Function**
-    - Ask for book details (name, author, volume).
-    - Create a Book object with the provided details.
-    - Call the `add_book` method of the Book class to add the book to the file.
-
-3. **list_books Function**
-    - Create a temporary Book object.
-    - Call the `get_all_books` method of the Book class to list all books.
-
-4. **issue_book Function**
-    - Ask for the name of the book to be issued.
-    - Create a temporary Book object.
-    - Call the `issue_book` method of the Book class to issue the book.
-
-5. **return_book Function**
-    - Ask for the name of the book to be returned.
-    - Create a temporary Book object.
-    - Call the `return_book` method of the Book class to return the book.
-
 
 ## Pseudocode
 
-```
+```pseudo
 
 Import Scanner
 
