@@ -20,10 +20,11 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-remote_theme: pages-themes/slate@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 
 #theme: minimal-mistakes-jekyll
 markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
+  syntax_highlighter: rouge
