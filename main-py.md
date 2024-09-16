@@ -14,9 +14,9 @@
 
 ### Pseudocode
 
-```pseudocode
+```python
 FUNCTION main
-    PRINT welcome message
+    DISPLAY welcome message
     PROMPT user for their name and greet them
     DISPLAY options for adding a book, listing all books, issuing a book, or returning a book
     READ user input as option
@@ -30,7 +30,7 @@ FUNCTION main
         CALL return_book
 
 FUNCTION add_book
-    PRINT prompt for book details
+    DISPLAY prompt for book details
     READ book name, author, and volume from user input
     SET issued status to "No"
     CREATE a Book object with the provided details
