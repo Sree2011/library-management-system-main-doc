@@ -15,7 +15,7 @@
 
 ### Pseudocode
 
-```pseudocode
+```java
 FUNCTION append_dict_to_csv(file_path, my_dict)
     TRY
         OPEN file_path in append mode as file

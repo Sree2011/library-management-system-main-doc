@@ -15,7 +15,7 @@
 
 ## Pseudocode
 
-```pseudocode
+```java
 CLASS Book
 
     FUNCTION __init__(name, author, volume, issued)
