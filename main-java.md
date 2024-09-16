@@ -89,23 +89,23 @@ CLASS Main
 
          // Create a Book object and call the add_book method
         CREATE STATIC OBJECT book Book(book_name,author_name,volume,issued)
-        Call "add_book" method on the "book" object, passing "filePath" as an argument.
+        CALL "add_book" method on the "book" object, passing "filePath" as an argument.
 
     END METHOD
 
     METHOD list_books()
         CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
-        Call "get_all_books" method on the "book" object, passing "filePath" as an argument.
+        CALL "get_all_books" method on the "book" object, passing "filePath" as an argument.
     END METHOD
 
     METHOD issue_book()
         CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
-        Call "issue_book" method on the "book" object, passing "filePath" as an argument.
+        CALL "issue_book" method on the "book" object, passing "filePath" as an argument.
     END METHOD
 
     METHOD return_book()
         CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
-        Call "return_book" method on the "book" object, passing "filePath" as an argument.
+        CALL "return_book" method on the "book" object, passing "filePath" as an argument.
     END METHOD
 ENDCLASS
 
