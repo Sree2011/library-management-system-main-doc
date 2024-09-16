@@ -28,6 +28,8 @@ FUNCTION main
         CALL issue_book
     ELSE IF option is 4 THEN
         CALL return_book
+    END IF
+END FUNCTION
 
 FUNCTION add_book
     DISPLAY prompt for book details
@@ -35,6 +37,7 @@ FUNCTION add_book
     SET issued status to "No"
     CREATE a Book object with the provided details
     CALL add_book method of the Book object
+END FUNCTION
 
 FUNCTION list_books
     CREATE a Book object with sample data
@@ -44,6 +47,7 @@ FUNCTION list_books
     SET DataFrame index to start from 1
     PRINT the DataFrame
     RETURN the DataFrame
+END FUNCTION
 
 FUNCTION issue_book
     CALL list_books and store result in df
@@ -56,6 +60,8 @@ FUNCTION issue_book
         PRINT "Books found:" and the result
         CREATE a Book object using data from the first row of the result
         CALL issue_book method of the Book object with user input
+    END IF
+END FUNCTION
 
 FUNCTION return_book
     CALL list_books and store result in df
@@ -68,4 +74,7 @@ FUNCTION return_book
         PRINT "Books found:" and the result
         CREATE a Book object using data from the first row of the result
         CALL return_book method of the Book object with user input
+    END IF
+END FUNCTION
+
 ```
