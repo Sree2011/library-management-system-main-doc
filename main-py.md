@@ -15,7 +15,7 @@
 ### Pseudocode
 
 ```python
-FUNCTION main
+Function main
     DISPLAY welcome message
     PROMPT user for their name and greet them
     DISPLAY options for adding a book, listing all books, issuing a book, or returning a book
@@ -29,7 +29,7 @@ FUNCTION main
     ELSE IF option is 4 THEN
         CALL return_book
     END IF
-END FUNCTION
+END Function
 
 FUNCTION add_book
     DISPLAY prompt for book details
