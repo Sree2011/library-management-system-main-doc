@@ -58,4 +58,6 @@ CLASS Book
         CALL find_book with name
         PRINT result
     END FUNCTION
+END CLASS
+
 ```

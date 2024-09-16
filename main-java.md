@@ -107,6 +107,6 @@ CLASS Main
         CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
         CALL "return_book" method on the "book" object, passing "filePath" as an argument.
     END METHOD
-ENDCLASS
+END CLASS
 
 ```
