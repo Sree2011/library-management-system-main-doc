@@ -25,6 +25,9 @@ FUNCTION append_dict_to_csv(file_path, my_dict)
         PRINT success message
     EXCEPT Exception as e
         PRINT error message
+    END TRY
+END FUNCTION
+
 
 FUNCTION get_books(file_path)
     TRY
@@ -34,6 +37,8 @@ FUNCTION get_books(file_path)
     EXCEPT Exception as e
         PRINT error message
         RETURN empty numpy array
+    END TRY
+END FUNCTION
 
 FUNCTION find_book(file_path, name)
     CALL get_books(file_path) and store result in books
@@ -43,6 +48,7 @@ FUNCTION find_book(file_path, name)
     CONVERT name to lowercase
     FILTER DataFrame for rows where "Name" matches name (case-insensitive)
     RETURN filtered DataFrame
+END FUNCTION
 
 FUNCTION update_book_status(file_path, name, status)
     READ CSV file_path into a numpy array, skipping header
@@ -51,4 +57,6 @@ FUNCTION update_book_status(file_path, name, status)
     FOR each position in positions
         UPDATE issued status to status
     SAVE updated numpy array back to CSV file_path with header
+END FUNCTION
+
 ```

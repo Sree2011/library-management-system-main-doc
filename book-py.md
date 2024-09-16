@@ -23,19 +23,23 @@ CLASS Book
         SET self.author = author
         SET self.volume = volume
         SET self.issued = issued
+    END FUNCTION
 
     FUNCTION add_book()
         CONVERT book attributes to dictionary
         CALL bookutils.append_dict_to_csv with file path and dictionary
         PRINT "Book Added:" and book details
+    END FUNCTION
 
     FUNCTION find_book(name)
         CALL bookutils.find_book with file path and name
         RETURN result as pandas DataFrame
+    END FUNCTION
 
     FUNCTION get_all_books()
         CALL bookutils.get_books with file path
         RETURN result as pandas DataFrame
+    END FUNCTION
 
     FUNCTION issue_book(book_name)
         CALL find_book with book_name
@@ -45,10 +49,13 @@ CLASS Book
             CALL bookutils.update_book_status with file path, book_name, "Yes"
             CALL find_book with book_name
             PRINT "Book issued:" and book details
+        END IF
+    END FUNCTION
 
     FUNCTION return_book(name)
         CALL bookutils.update_book_status with file path, name, "No"
-        PRINT "Book returned:"
+        DISPLAY "Book returned:"
         CALL find_book with name
         PRINT result
+    END FUNCTION
 ```
