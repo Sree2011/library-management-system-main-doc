@@ -37,19 +37,19 @@ CLASS Main
 
         // EXECUTE OPERATION BASED ON INPUT
 
-        IF option equals 1 THEN
+        IF option EQUALS 1 THEN
             Call add_book()
             Exit current block
-        ELSE IF option equals 2 THEN
+        ELSE IF option EQUALS 2 THEN
             Call list_books()
             Exit current block
-        ELSE IF option equals 3 THEN
+        ELSE IF option EQUALS 3 THEN
             Display "Enter the name of the book you want to be issued:"
             Read name from input
             Convert name to lowercase
             Call issue_book(name)
             Exit current block
-        ELSE IF option equals 4 THEN
+        ELSE IF option EQUALS 4 THEN
             Display "Enter the name of the book you want to return:"
             Read name from input
             Convert name to lowercase

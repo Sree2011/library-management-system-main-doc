@@ -14,22 +14,22 @@
 
 ### Pseudocode
 
-```python
-METHOD main
+```java
+FUNCTION main
     DISPLAY welcome message
     PROMPT user for their name and greet them
     DISPLAY options for adding a book, listing all books, issuing a book, or returning a book
     READ user input as option
-    if option is 1 THEN
-        Call add_book
-    else if option is 2 THEN
-        Call list_books
-    else if option is 3 THEN
-        Call issue_book
-    else if option is 4 THEN
-        call return_book
-    end-if
-END METHOD
+    IF option EQUALS 1 THEN
+        CALL add_book
+    ELSE IF option EQUALS 2 THEN
+        CALL list_books
+    ELSE IF option EQUALS 3 THEN
+        CALL issue_book
+    ELSE IF option EQUALS 4 THEN
+        CALL return_book
+    END IF
+END FUNCTION
 
 FUNCTION add_book
     DISPLAY prompt for book details
