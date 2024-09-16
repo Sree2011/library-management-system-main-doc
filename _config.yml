@@ -20,10 +20,10 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: mmistakes/minimal-mistakes
 #theme: minimal-mistakes-jekyll
 markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
-  syntax_highlighter: Pygments
+  syntax_highlighter: rouge
