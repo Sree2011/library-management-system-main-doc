@@ -98,9 +98,15 @@ CLASS Main
         Call "get_all_books" method on the "book" object, passing "filePath" as an argument.
     END METHOD
 
-    
+    METHOD issue_book()
+        CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
+        Call "issue_book" method on the "book" object, passing "filePath" as an argument.
+    END METHOD
 
-
+    METHOD return_book()
+        CREATE STATIC OBJECT book Book("ff","ss","1st","2nd")
+        Call "return_book" method on the "book" object, passing "filePath" as an argument.
+    END METHOD
 ENDCLASS
 
 ```
