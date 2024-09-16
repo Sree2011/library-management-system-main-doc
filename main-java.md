@@ -1,10 +1,10 @@
 # Main Module - Java
 
 **Modules:**
-    - **Book**: The book module defines the functions of a book
+    - **Book**: The book module defines the functions of a book.\
 
-**Functions:**
-    - **main()**: Displays welcome information to the user
+**Functions:**\
+    - **main()**: Displays welcome information to the user.\
     - **add_book():** Adds a new book to the library.\
     - **list_books():** Retrieves a list of all books in the library.\
     - **issue_book(name):** Issues a book and updates its status to "Yes".\
@@ -13,7 +13,7 @@
 
 ## Pseudocode
 
-```pseudocode
+```java
 
 CLASS Main
     DECLARE STATIC OBJECT Scanner sc
@@ -109,9 +109,4 @@ CLASS Main
     END METHOD
 ENDCLASS
 
-```
-
-
-```java
-System.out.println("Hello World!");
 ```
